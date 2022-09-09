@@ -16,14 +16,14 @@
 
 ### BIG O
 
-## What is a good code?
+### What is a good code?
 
 - Readable
 - Scalable
 
 **BIG O:** Is used to determine how long and algorithm takes to run/execute.
 
-## Big Os
+### Big Os
 
 1. O(1) Constant- no loops
 2. O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
@@ -38,14 +38,14 @@
 
    **Two separate collections: O(a\*b)**
 
-## What can cause time in a function?
+### What can cause time in a function?
 
 1.  Operations (+, -, \*, /)
 2.  Comparisons (<, >, ==)
 3.  Looping (for, while)
 4.  Outside Function call (function())
 
-## Rule Book
+### Rule Book
 
 1.  Rule 1: Always worst Case
 2.  Rule 2: Remove Constants
@@ -58,7 +58,7 @@
 
 4.  Rule 4: Drop Non-dominant terms
 
-## What causes Space complexity?-
+### What causes Space complexity?-
 
 1. Variables
 2. Data Structures
