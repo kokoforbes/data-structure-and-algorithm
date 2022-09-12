@@ -115,6 +115,8 @@
 
 ### Resources
 
-[DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+[ :notebook: DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
-[Edabit](https://edabit.com/challenges/javascript)
+[ :black_nib: Data Structure sketches](https://okso.app/showcase/data-structures)
+
+[ :bookmark: Edabit](https://edabit.com/challenges/javascript)
