@@ -18,8 +18,8 @@
 
 - [ :notebook: DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
-- [ :: Data Structure sketches](https://okso.app/showcase/data-structures)
+- [ :notebook: Data Structure sketches](https://okso.app/showcase/data-structures)
 
-- [ :bookmark: Edabit](https://edabit.com/challenges/javascript)
+- [ :notebook: Edabit](https://edabit.com/challenges/javascript)
 
 - [ :lock: Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
