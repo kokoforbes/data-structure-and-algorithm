@@ -1,235 +1,27 @@
 # Data-structure-and-algorithm
 
-1. [BIG O](#big-o)
-2. [Arrays](#arrays)
-3. [Hash Tables](#hash-tables)
-4. [Linked Lists](#linked-list)
-5. [Stacks + Queues](#stacks-queues)
-6. [Trees](#tree)
-7. [Graphs](#graphs)
-8. [Recursion](#recursion)
-9. [Sorting](#sorting)
-10. [Searching + BFS + DFS](#searching-bfs-dfs)
-11. [Dynamic Programming](#dynamic-programming)
-
-- [Resources](#resources)
-
-### BIG O
-
-### What is a good code?
-
-- Readable
-- Scalable == memory && speed
-
-  **scalable?** - Speed at which a code runs and its memory usage.
-
-  **memory === space complexity**
-
-  **speed === time complexity**
-
-**BIG O:** Is used to determine how long an algorithm takes to run/execute. || Big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows
-
-**run time?** - Simply how long a function/task takes to run.
-
-**heap?** - Where we store variables that we assign values to.
-
-**stack?** - Where we keep track of our function calls
-
-**Bottleneck?** - is the part of the code with the biggest Big O.
-
-### Good code checklist:
-
-[✅] It works
-
-[✅] Good use of data structures
-
-[✅] Code Re-use/ Do Not Repeat Yourself
-
-[✅] Modular - makes code more readable, maintainable and testable
-
-[✅] Less than O(N^2). We want to avoid nested loops if we can since they are expensive. Two
-separate loops are better than 2 nested loops
-
-[✅] Low Space Complexity --> Recursion can cause stack overflow, copying of large arrays may
-exceed memory of machine
-
-### Heurestics to ace the question:
-
-[✅] Hash Maps are usually the answer to improve Time Complexity
-
-[✅] If it's a sorted array, use Binary tree to achieve O(log N). Divide and Conquer - Divide a data set
-into smaller chunks and then repeating a process with a subset of data. Binary search is a great
-example of this
-
-[✅] Try Sorting your input
-
-[✅] Hash tables and precomputed information (i.e. sorted) are some of the best ways to optimize your
-code
-
-[✅] Look at the Time vs Space tradeoff. Sometimes storing extra state in memory can help the time.
-(Runtime)
-
-[✅] Space time tradeoffs: Hastables usually solve this a lot of the times. You use more space, but you
-can get a time optimization to the process. In programming, you often times can use up a little bit
-more space to get faster time
-
-### Big Os
-
-```
-1. O(1) Constant Time- no loops
-2. O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
-3. O(n) Linear Time- for loops, while loops through n items
-4. O(n log(n)) Log Liniear- usually sorting operations
-5. O(n^2) Quadratic Time- every element in a collection needs to be compared to ever other element. Two
-   nested loops
-6. O(2^n) Exponential- recursive algorithms that solves a problem of size N
-7. O(n!) Factorial- you are adding a loop for every element
-
-   **Iterating through half a collection is still O(n)**
-
-   **Two separate collections: O(a\*b)**
-```
-
-**What is the difference between big oh, big omega and big theta notations?**
-
-```
-What is the mileage that your car gives?
-
-So let's discuss different scenarios.
-
-Let's say the car gives an average of 12 km/hr in Traffic, an average of 20 km/hr on Highway and an average of 16 km/hr in Normal City Traffic.
-
-Traffic is your worst case, Highway is your best case and Normal City Traffic is your average case.
-
-This is similar to the notations that we use for Algorithm runtime Analysis.
-
-Omega Notation ( Ω ) gives the best case complexity (highway in above case), Big O Notation ( O ) gives the worst case complexity (traffic in above case) and Theta Notation ( θ ) gives the average case complexity of an algorithm (normal city traffic in above case).
-```
-
-### Rule Book
-
-```
-BIG O == Worst Case
-```
-
-Four rules to follow to determine BIG O.
-
-1.  Rule 1: Always worst Case scenarios
-2.  Rule 2: Remove Constants
-3.  Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
-    O(a\*b)
-
-    \- for steps in order
-
-    \* for nested steps
-
-4.  Rule 4: Drop Non-dominant terms
-
-### What can cause time in a function?
-
-1.  Operations (+, -, \*, /)
-2.  Comparisons (\<, >, ==)
-3.  Looping (for, while)
-4.  Outside Function call (function())
-
-### What causes Space complexity?-
-
-1. Variables
-2. Data Structures
-3. Function Call
-4. Allocations
-
-**BIG O COMPLEXITY CHART**
-
-[Know thy complexities](https://www.bigocheatsheet.com/)
-
-Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
-
-| Big O Notation | Type        | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements |
-| -------------- | ----------- | ---------------------------- | ----------------------------- | ------------------------------ |
-| **O(1)**       | Constant    | 1                            | 1                             | 1                              |
-| **O(log N)**   | Logarithmic | 3                            | 6                             | 9                              |
-| **O(N)**       | Linear      | 10                           | 100                           | 1000                           |
-| **O(N log N)** | n log(n)    | 30                           | 600                           | 9000                           |
-| **O(N^2)**     | Quadratic   | 100                          | 10000                         | 1000000                        |
-| **O(2^N)**     | Exponential | 1024                         | 1.26e+29                      | 1.07e+301                      |
-| **O(N!)**      | Factorial   | 3628800                      | 9.3e+157                      | 4.02e+2567                     |
-
-### Data Structure Operations Complexity
-
-| Data Structure         | Access | Search | Insertion | Deletion | Comments                                             |
-| ---------------------- | :----: | :----: | :-------: | :------: | :--------------------------------------------------- |
-| **Array**              |   1    |   n    |     n     |    n     |                                                      |
-| **Stack**              |   n    |   n    |     1     |    1     |                                                      |
-| **Queue**              |   n    |   n    |     1     |    1     |                                                      |
-| **Linked List**        |   n    |   n    |     1     |    n     |                                                      |
-| **Hash Table**         |   -    |   n    |     n     |    n     | In case of perfect hash function costs would be O(1) |
-| **Binary Search Tree** |   n    |   n    |     n     |    n     | In case of balanced tree costs would be O(log(n))    |
-| **B-Tree**             | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
-| **Red-Black Tree**     | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
-| **AVL Tree**           | log(n) | log(n) |  log(n)   |  log(n)  |                                                      |
-| **Bloom Filter**       |   -    |   1    |     1     |    -     | False positives are possible while searching         |
-
-### Array Sorting Algorithms Complexity
-
-| Name               |     Best      |         Average         |            Worst            | Memory | Stable | Comments                                                      |
-| ------------------ | :-----------: | :---------------------: | :-------------------------: | :----: | :----: | :------------------------------------------------------------ |
-| **Bubble sort**    |       n       |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |  Yes   |                                                               |
-| **Insertion sort** |       n       |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |  Yes   |                                                               |
-| **Selection sort** | n<sup>2</sup> |      n<sup>2</sup>      |        n<sup>2</sup>        |   1    |   No   |                                                               |
-| **Heap sort**      | n&nbsp;log(n) |      n&nbsp;log(n)      |        n&nbsp;log(n)        |   1    |   No   |                                                               |
-| **Merge sort**     | n&nbsp;log(n) |      n&nbsp;log(n)      |        n&nbsp;log(n)        |   n    |  Yes   |                                                               |
-| **Quick sort**     | n&nbsp;log(n) |      n&nbsp;log(n)      |        n<sup>2</sup>        | log(n) |   No   | Quicksort is usually done in-place with O(log(n)) stack space |
-| **Shell sort**     | n&nbsp;log(n) | depends on gap sequence | n&nbsp;(log(n))<sup>2</sup> |   1    |   No   |                                                               |
-| **Counting sort**  |     n + r     |          n + r          |            n + r            | n + r  |  Yes   | r - biggest number in array                                   |
-| **Radix sort**     |    n \* k     |         n \* k          |           n \* k            | n + k  |  Yes   | k - length of longest key                                     |
-
----
-
-### Arrays
-
----
-
-### Hash Tables
-
----
-
-### Linked Lists
-
----
-
-### Stacks + Queues
-
----
-
-### Trees
-
----
-
-### Graphs
-
----
-
-### Recursion
-
----
-
-### Sorting
-
----
-
-### Searching + BFS + DFS
-
----
-
-### Dynamic Programming
-
----
-
-### Resources
-
-[ :notebook: DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-
-[ :black_nib: Data Structure sketches](https://okso.app/showcase/data-structures)
-
-[ :bookmark: Edabit](https://edabit.com/challenges/javascript)
+| **Num** | **Type**                                                  | **Description**                                                                                                                                                                                                                                                                                              |
+| ------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.-     | [Big O Notation](./01-Big-O-Notation)                     | The `Array` is the most common data structure in computer programming                                                                                                                                                                                                                                        |
+| 2.-     | [Array](./02-Array)                                       | The `Array` is the most common data structure in computer programming                                                                                                                                                                                                                                        |
+| 3.-     | [Hash Table](./03-Hash-Table)                             | A `List` is an ordered sequence of data, where elements are not meant to be ordered.                                                                                                                                                                                                                         |
+| 4.-     | [Linked List](./04-Linked-List)                           | A `Stack` is an example of Last-in, First-Out (LIFO)                                                                                                                                                                                                                                                         |
+| 5.-     | [Stack](./05-Stack)                                       | A `Queue` is an example of First-in, First-Out (FIFO)                                                                                                                                                                                                                                                        |
+| 6.-     | [Queue](./06-Queue)                                       | A `Linked list` is a collection of objects called nodes. Each node is linked to a successor node in the list using an object reference.                                                                                                                                                                      |
+| 7.-     | [Tree](./07-Tree)                                         | Traversing a `Double linked list` are more efficient, since we no longer have to search for the previous node.                                                                                                                                                                                               |
+| 8.-     | [Graph](./08-Graph)                                       | The reason you might want to create a `Circular linked list` is if you want the ability to go backward through a list but don’t want the extra overhead of creating a doubly linked list.                                                                                                                    |
+| 9.-     | [Recursion](./09-Recursion)                               | `Hashing` is a common technique for storing data in such a way that the data can be inserted and retrieved very quickly. Hashing uses a data structure called a hash table. Although hash tables provide fast insertion, deletion, and retrieval, they perform poorly for operations that involve searching. |
+| 10.-    | [Sorting](./10-Sorting)                                   | `Binary trees` are chosen over other more primary data structures because you can search a binary tree very quickly (as opposed to a linked list, for example) and you can quickly insert and delete data from a binary tree (as opposed to an array).                                                       |
+| 11.-    | [Searching](./11-Searching)                               | A graph consists of a set of vertices and a set of edges. A map is a type of graph where each town is a vertex, and a road that connects two towns is an edge. Edges are defined as a pair (v1, v2), where v1 and v2 are two vertices in a graph                                                             |
+| 11.-    | [Sorting Algorithms](./12-chapter-Sorting-Algorithms)     | Two of the most common operations performed on data stored in a computer are sorting and searching.                                                                                                                                                                                                          |
+| 12.-    | [Searching Algorithms](./13-chapter-Searching-Algorithms) | There are two ways to search for data in a list: sequential search and binary search. A sequential search is used when the items in a list are in random order; a binary search is used when the items in a list are in sorted order.                                                                        |
+
+### References
+
+- [ :notebook: DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
+- [ :black_nib: Data Structure sketches](https://okso.app/showcase/data-structures)
+
+- [ :bookmark: Edabit](https://edabit.com/challenges/javascript)
+
+- [ :lock: Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
