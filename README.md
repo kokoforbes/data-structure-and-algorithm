@@ -25,3 +25,7 @@
 - [ :lock: Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 
 - [ :notebook: Tech Dev Guide](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
+
+- [ :notebook: Data Structure All Langs](https://github.com/oyekanmiayo/data-structures-all-langs)
+
+- [ :notebook: Data Structure and Algorithms with ES6](https://github.com/crizstian/data-structure-and-algorithms-with-ES6)
