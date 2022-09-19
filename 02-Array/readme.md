@@ -8,6 +8,12 @@ Array data structure organizes elements sequentially i.e one after the other in 
 
 array is also known as list.
 
+**Array Types**
+
+- Static array - The memory allocation is done at the compile time and the memory is allocated in the stack memory. The size of the array is fixed. (Array size is specified ahead of time).
+
+- Dynamic array - The memory allocation is done at the runtime and the memory is allocated in the heap memory. The size of the array is not fixed
+
 ```
 const myArray = [1, 'one', {some: 'object'}, new Date()]
 ```
