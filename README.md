@@ -16,10 +16,12 @@
 
 ### References
 
-- [ :notebook: DATA STRUCTURE VISUALIZATION](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [ :notebook: Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
-- [ :notebook: Data Structure sketches](https://okso.app/showcase/data-structures)
+- [ :notebook: Data Structure Sketches](https://okso.app/showcase/data-structures)
 
 - [ :notebook: Edabit](https://edabit.com/challenges/javascript)
 
 - [ :lock: Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+
+- [ :notebook: Tech Dev Guide](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
